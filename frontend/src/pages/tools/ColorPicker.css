@@ -1,0 +1,123 @@
+.color-picker {
+  animation: fadeIn var(--transition-normal) ease;
+}
+
+.tool-header {
+  margin-bottom: 2rem;
+}
+
+.tool-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.tool-header p {
+  color: var(--color-text-muted);
+}
+
+.color-picker-container {
+  position: relative;
+  max-width: 500px;
+}
+
+.color-preview {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.color-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.color-values {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.color-value-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.color-value-item:last-child {
+  border-bottom: none;
+}
+
+.color-value-item:hover {
+  background: var(--color-surface-hover);
+}
+
+.color-value-item .label {
+  width: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.color-value-item .value {
+  flex: 1;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.copy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  opacity: 0;
+  transition: all var(--transition-fast);
+}
+
+.color-value-item:hover .copy-icon {
+  opacity: 1;
+}
+
+.copy-icon:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.copied-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-success);
+  border-radius: var(--radius-md);
+  color: white;
+  font-weight: 500;
+  animation: fadeIn var(--transition-fast) ease;
+}
