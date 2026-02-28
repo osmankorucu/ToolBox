@@ -63,6 +63,14 @@ public class ToolController {
                 "Security Tools",
                 "Generate secure passwords",
                 "/tools/password-generator"
+            ),
+            new ToolInfo(
+                "face-blur",
+                "Face Blur",
+                "user",
+                "Privacy Tools",
+                "Detect and blur faces in images",
+                "/tools/face-blur"
             )
         );
         

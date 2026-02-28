@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { X, Code, Lock, Palette, Scale, Hash, Key } from 'lucide-react'
+import { X, Code, Lock, Palette, Scale, Hash, Key, User } from 'lucide-react'
 import './Sidebar.css'
 
 interface SidebarProps {
@@ -14,6 +14,7 @@ const tools = [
   { id: 'color', name: 'Color Picker', icon: Palette, path: '/tools/color', category: 'Tasarım' },
   { id: 'unit', name: 'Unit Converter', icon: Scale, path: '/tools/unit', category: 'Genel' },
   { id: 'password', name: 'Password Generator', icon: Key, path: '/tools/password', category: 'Güvenlik' },
+  { id: 'face-blur', name: 'Face Blur', icon: User, path: '/tools/face-blur', category: 'Gizlilik' },
 ]
 
 function Sidebar({ isOpen, onClose }: SidebarProps) {

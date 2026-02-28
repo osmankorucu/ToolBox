@@ -7,6 +7,7 @@ import UuidGenerator from './pages/tools/UuidGenerator'
 import ColorPicker from './pages/tools/ColorPicker'
 import UnitConverter from './pages/tools/UnitConverter'
 import PasswordGenerator from './pages/tools/PasswordGenerator'
+import FaceBlur from './pages/tools/FaceBlur'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="tools/color" element={<ColorPicker />} />
           <Route path="tools/unit" element={<UnitConverter />} />
           <Route path="tools/password" element={<PasswordGenerator />} />
+          <Route path="tools/face-blur" element={<FaceBlur />} />
         </Route>
       </Routes>
     </Router>
