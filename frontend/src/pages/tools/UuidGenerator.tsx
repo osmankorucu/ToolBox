@@ -14,7 +14,7 @@ function UuidGenerator() {
     try {
       const response = await axios.get(`/api/tool/uuid/generate?count=${count}`)
       const result = response.data.result
-      const uuidList = result.split('\n').filter(u => u.trim())
+      const uuidList = result.split('\n').filter((u: string) => u.trim())
       setUuids(uuidList)
     } catch (err) {
       console.error('UUID oluşturma hatası:', err)
