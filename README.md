@@ -18,6 +18,7 @@ Modern ve kullanımı kolay çoklu araçlar (multi-tool) web uygulaması. Geliş
 - **Color Picker** - Renk seçme ve farklı formatlarda görüntüleme (HEX, RGB, HSL)
 - **Unit Converter** - Birim dönüşümü (Uzunluk, Ağırlık)
 - **Password Generator** - Güvenli parola oluşturma
+- **Face Blur** - Resimlerde yüz tespiti ve bulanıklaştırma
 
 ## 🛠️ Teknolojiler
 
