@@ -118,6 +118,9 @@ Modern karanlık tema (Dark theme) ile:
 
 MIT License
 
+Notlar (güncelleme)
+- README proje genel görünümünü anlatıyor. Eğer repo içinde `frontend/` veya `backend/` alt dizinleri farklıysa, çalıştırma adımlarını repo köküne göre uyarlamak gerekebilir.
+
 ---
 
 Made with ❤️
